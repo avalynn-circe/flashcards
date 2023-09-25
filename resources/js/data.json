@@ -1,0 +1,132 @@
+[
+    {
+		"prompt": "<span>var</span>, <span>let</span>, and <span>const</span>",
+		"answer": "<span>var</span>, <span>let</span>, and <span>const</span> have different scopes and mutability. <span>var</span> is function-scoped and can be both re-declared and updated, making it a more flexible, but potentially riskier, option. <span>let</span> is block-scoped and can only be updated, not re-declared. <span>const</span>, is also block-scoped but cannot be updated or re-declared, making it the strictest option. You can use <span>var</span>, <span>let</span>, and <span>const</span> to declare global variables outside of functions.",
+		"link": "https://www.freecodecamp.org/news/understanding-let-const-and-var-keywords"
+	},
+    {
+		"prompt": "ES6 modules scope",
+		"answer": "Any variables or functions declared in a module won’t be added automatically to the global scope and must be exported and imported where needed and then called in the DOM.<br><br><span>export let message = 'ES6 Modules'; <br><br>import { message } from './message.js'<br><br>&lt;script type=\"module\" src=\"./app.js\">&lt;/script></span>",
+		"link": "https://www.javascripttutorial.net/es6/es6-modules/"
+	},
+    {
+		"prompt": "<span>class</span> keyword",
+		"answer": "Prior to ES6, JavaScript had no concepts of classes. To mimic a class, you could use the prototype pattern:<br><br><span>Person.prototype.getName = function () {return this.name;}; </span><br><br>ES6 introduced a new syntax for declaring a class using the class keyword. ES6 automatically calls the constructor() method when you instantiate an object of the class: <br><br><span>class Person {<br>&emsp;constructor(name) {<br>&emsp; &emsp; this.name = name; <br>&emsp;} <br>&emsp; getName() {<br>&emsp; &emsp; return this.name; <br>&emsp;} <br>}</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-class/"
+	},
+    {
+		"prompt": "Arrow functions (<span>=></span>)",
+		"answer": "An arrow function expression (<span>=></span>) is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage. The value of <span>this</span> retains the value from its surrounding context.<br><br><span>let add = (x, y) => x + y;</span>",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+	},
+    {
+		"prompt": "Template literal (<span>``</span>)",
+		"answer": "Instead of using quotation marks, create a template literal by wrapping your text in backticks (<span>``</span>) as follows:<br><span>let text = `This is a template literal`;</span><br>With template literals you can:<br>&emsp;- span multiple lines<br>&emsp;- substitute part of the string with variables or expressions (string interpolation)<br>&emsp;- include HTML",
+		"link": "https://www.javascripttutorial.net/es6/javascript-template-literals/"
+	},		
+    {
+		"prompt": "Default function parameter",
+		"answer": "Default function parameters allow you to initialize named parameters with default values if no values or undefined are passed into the function.<br><span>function say(message='Hi') {<br>&emsp;console.log(message);<br>}</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-default-parameters/"
+	},	
+    {
+		"prompt": "Rest parameter (<span>…</span>)",
+		"answer": "A rest parameter (<span>…</span>) allows you to represent an indefinite number of arguments as an array.<br><br><span>function fn(a,b,...args) {<br>&emsp;//…<br>}</span><br><br>The spread operator (<span>…</span>) unpacks the elements of an iterable object.<br>The rest parameter (<span>…</span>) packs the elements into an array.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-rest-parameters/"
+	},	
+    {
+		"prompt": "Spread operator (<span>…</span>)",
+		"answer": "The spread operator (<span>…</span>) allows you to spread out elements of an iterable object such as an array, map, or set:<br><br><span>const odd = [1,3,5];<br>const combined = [2,4,6, ...odd];<br>console.log(combined);<br>~ [ 2, 4, 6, 1, 3, 5 ]</span><br><br>The spread operator (<span>…</span>) unpacks the elements of an iterable object.<br>The rest parameter (<span>…</span>) packs the elements into an array.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-spread/"
+	},
+    {
+		"prompt": "<span>generate()</span>, <span>*</span>, and <span>yield</span>",
+		"answer": "A generator function can be paused and resumed.<br><br><span>function* generate() {<br>&emsp;yield 1;<br>&emsp;yield 2;<br>}</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-generators/"
+    },
+    {
+		"prompt": "<span>symbol</span> and <span>Symbol()</span>",
+		"answer": "ES6 added <span>symbol</span> as a new primitive type. Unlike other primitive types such as <span>number</span>, <span>boolean</span>, <span>null</span>, <span>undefined</span>, and <span>string</span>, the <span>symbol</span> type doesn’t have a literal form. To create a new symbol, you use the global <span>Symbol()</span> function.",
+		"link": "https://www.javascripttutorial.net/es6/symbol/"
+	},
+    {
+		"prompt": "<span>find()</span>",
+		"answer": "<span>find()</span> returns the first element in an array that satisfies a condition.<br><br><span>let numbers = [1, 2, 3, 4, 5];<br>return numbers.find(e => e % 2 == 0);</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-array-find/"
+	},	
+    {
+		"prompt": "<span>findIndex()</span>",
+		"answer": "The <span>findIndex()</span> method returns the index of the element that satisfies a testing function or -1 if no element passed the test.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-array-findindex/"
+	},	
+    {
+		"prompt": "<span>endsWith()</span>",
+		"answer": "determine if a string ends with another string.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-string-endswith/"
+	},	
+    {
+		"prompt": "<span>includes()</span>",
+		"answer": "check if a string contains another string.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-string-includes/"
+	},	
+    {
+		"prompt": "<span>startsWith()</span>",
+		"answer": "check if a string starts with another string.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-string-startswith/"
+	},
+    {
+		"prompt": "<span>for…of</span>",
+		"answer": "<span>for…of</span> iterates over any iterable object such as: Array, String, Map, Set, arguments, NodeList, etc.<span>for (i of items) {<br>&emsp;// ...<br>}</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-for-of/"
+	},
+    {
+		"prompt": "<span>Array.from()</span>",
+		"answer": "the <span>Array.from()</span> method creates a new instance of an Array from any array-like or iterable object:<br><br><span>Array.from(target [, mapFn[, thisArg]])</span>",
+		"link": "https://www.javascripttutorial.net/es6/array-from/"
+	},	
+    {
+		"prompt": "<span>Array.of()</span>",
+		"answer": "the <span>Array.of()</span> method always creates an array that contains the values that you pass to it regardless of the types or the number of arguments:<br><br><span>Array.of(element0[, element1[, ...[, elementN]]])</span>",
+		"link": "https://www.javascripttutorial.net/es6/array-of/"
+	},		
+    {
+		"prompt": "<span>Map()</span>",
+		"answer": "A <span>Map</span> object holds key-value pairs where values of any type can be used as either keys or values. In addition, a <span>Map()</span> object remembers the original insertion order of the keys. To create a new Map, you use the following syntax:<br><br><span>let map = new Map([iterable]);</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-map/"
+	},		
+    {
+		"prompt": "<span>Set()</span>",
+		"answer": "<span>Set</span> is a new <span>type</span> that stores a collection of unique values of any <span>type</span>. <br><br><span>let setObject = new Set();</span><br><br>The Set object provides the following useful methods:<br><br><span>add(value)</span><br><span>clear()</span><br><span>delete()</span><br><span>entries()</span><br><span>forEach()</span><br><span>has()</span><br><span>keys()</span><br><span>values()</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-set/"
+	},
+    {
+		"prompt": "Array Destructuring",
+		"answer": "Prior to ES6, there was no direct way to assign the elements of the returned array to multiple variables such as x, y and z.  ES6 allows you to destructure elements of an array into individual variables.<br><span>function getScores() {<br>&emsp;return [70, 80, 90]; <br>}<br>let [x, y, z] = getScores();</span>",
+		"link": "https://www.javascripttutorial.net/es6/destructuring/"
+	},	
+    {
+		"prompt": "Object literal",
+		"answer": "ES6 allows you to eliminate the duplication when a property of an object is the same as the local variable name by including the name without a colon and value:<br><span>function createMachine(name, status) {<br>&emsp;return {<br>&emsp;&emsp;name,<br>&emsp;&emsp;status<br>&emsp;};<br>}</span>",
+		"link": "https://www.javascripttutorial.net/es6/object-literal-extensions/"
+	},
+    {
+		"prompt": "Object Destructuring",
+		"answer": "ES6 allows you to destructure properties of an object into individual variables.<br><span>let person = {<br>&emsp;firstName: 'John',<br>&emsp;lastName: 'Doe'<br>};<br>let { firstName, lastName } = person;</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-object-destructuring/"
+	},		
+    {
+		"prompt": "<span>Object.assign()</span>",
+		"answer": "copy an object or merge objects.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-object-assign/"
+	},	
+    {
+		"prompt": "<span>Object.is()</span>",
+		"answer": "check if two values are the same value.",
+		"link": "https://www.javascripttutorial.net/es6/javascript-object-is/"
+	},
+    {
+		"prompt": "Computed property (<span>[]</span>)",
+		"answer": "ES6 allows you to use an expression in brackets <span>[]</span>. It’ll then use the result of the expression as the property name of an object:<br><br><span>let propName = 'c';<br><br>const rank = {<br>&emsp;a: 1,<br>&emsp;b: 2,<br>&emsp;[propName]: 3,<br>};<br><br>console.log(rank.c);</span>",
+		"link": "https://www.javascripttutorial.net/es6/javascript-computed-property/"
+	}
+]
